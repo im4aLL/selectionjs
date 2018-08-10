@@ -1,0 +1,19 @@
+{
+  "name": "selectionjs",
+  "version": "1.0.0",
+  "description": "Utility JavaScript class for handling text selection",
+  "main": "./src/selection.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/im4aLL/selectionjs.git"
+  },
+  "author": "Habib Hadi <me@habibhadi.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/im4aLL/selectionjs/issues"
+  },
+  "homepage": "https://github.com/im4aLL/selectionjs#readme"
+}

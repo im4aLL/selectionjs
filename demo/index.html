@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selection JS</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/im4aLL/roolith-css/b0b82b4e/dist/css/roolith.min.css">
+    <style>
+        /* FOR DEMO PURPOSE */
+        .header { padding: 20px 0 }
+        /* FOR DEMO PURPOSE */
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="columns large-6">
+                    <h5><a href="./">SelectionJS</a></h5>
+                </div>
+                <div class="columns large-6">
+                    <ul class="nav nav-right">
+                        <li class="nav-item"><a href="#" class="nav-link">Documentation</a></li>
+                        <li class="nav-item active"><a href="#" class="nav-link">Active menu</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Helper</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link dimmed">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="row">
+            <div class="columns large-6">
+                
+                <section class="textcontent" id="textcontent">
+                    <p><b>Lorem</b> <strong>ipsum</strong> <a href="">dolor</a> sit amet, consectetur adipisicing elit. Harum ab iste nulla perferendis error, blanditiis itaque accusantium fugiat velit facere autem doloremque ipsa, et expedita assumenda at fuga magnam voluptate?</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti tempore cumque deserunt molestiae officia facere consequatur velit nemo. Praesentium rerum earum modi doloribus eaque voluptatibus repellat odio accusamus consequuntur unde.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi deserunt nisi molestiae cumque exercitationem aut expedita est itaque, ex laboriosam cum odit dolores ipsa vero, sit obcaecati delectus quis. Nulla.</p>
+                </section>
+                
+            </div>
+            <div class="columns large-6">
+                
+                <aside class="console" id="console">
+                    <p>Console here</p>
+                </aside>
+                
+            </div>
+        </div>
+    </div>
+    
+<!--    <script type="module" src="../src/selection.js"></script>-->
+    <script type="module">
+        import { SelectionJS } from './../src/selection.js';
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            new SelectionJS(
+                document.getElementById('textcontent'), {
+                    onSelection: data => console.log(data)
+                }
+            );
+        });
+    </script>
+</body>
+</html>
